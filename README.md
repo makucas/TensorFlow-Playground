@@ -13,7 +13,8 @@
 
 * O objetivo do projeto era tentar replicar as principais funcionalidades encontradas no TensorFlow playground, mais especificamente os problemas de classificação. 
 * Foram implementadas as principais caracterísitcas para que o experimento atuasse de forma semelhante ao ambiente do TensorFlow, e são elas:
- * Teste
+  * ???
+    - ??
 
 
 ![image](https://github.com/makucas/Deep-Residual-Learning-for-Image-Recognition/assets/46076494/cb81d308-5193-4065-9cd0-ad76d6fc3431)
