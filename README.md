@@ -1,5 +1,5 @@
 # TensorFlow-Playground
-> Projeto desenvolvido durante a disciplina de Inteligência Artificial ministrada pelo professor Lucas Araújo Pereira na Universidade Federal de Goiás. Implementação em Python utilizando Pytorch. teste
+> Projeto desenvolvido durante a disciplina de Inteligência Artificial ministrada pelo professor Lucas Araújo Pereira na Universidade Federal de Goiás. Implementação em Python utilizando Pytorch. 
 
 ## Índice
 
@@ -18,28 +18,25 @@
   * 4 Features (x1, x2, x1², x2²)
   * Capacidade de adicionar e remover Nuerônios e Camadas
     
+ ![image](https://github.com/makucas/TensorFlow-Playground/assets/46076494/6f097744-3928-4d70-a2d4-11e7d45bbb4f)
 
-
-![image](https://github.com/makucas/Deep-Residual-Learning-for-Image-Recognition/assets/46076494/cb81d308-5193-4065-9cd0-ad76d6fc3431)
 
 ## Implementação
 
-* Como proposto pelo professor, a implementação do projeto foi realizada seguindo ao máximo as informações extraídas do paper.
-* A entrada da rede são imagens de 32x32, a primeira camada é uma convolução 3x3, seguida de 6n camadas com convoluções 3x3 e finalizando com um global avarage pooling, uma 10-way fully-connected e uma softmax.
+* A implementação foi feita em PyTorch visando atender as principáis características citadas no tópico de visão geral.
+* Cada conjunto de dados é composto por 800 pontos (com exceção do Exclusive Or que possui apenas 400), possuindo suas cordenadas x,y e a respectiva label indicando a coloração daquele ponto. Vale ressaltar que para os resultados obtidos, o dataset foi dividido em 50% para treino e 50% para teste. 
+* O modelo consiste de camadas lineares extraídas da classe nn.Module, e a implementação do mesmo permite adicionar x neurônios e y camadas.
+* A Loss utilizada foi a MeanSquareError, e o batch_size foi 10.
+* Os conjuntos de dados foram treinados com um número de épocas diferente, que variou de 100 até 1000 épocas, dependendo da complexidade do problema.
   
-![image](https://github.com/makucas/Deep-Residual-Learning-for-Image-Recognition/assets/46076494/7ca803e6-f891-4a94-be08-37fcea47af1c)
-
-* Como hiperparâmetros são utilizado de um weight decay de 0.0001, momentum em 0.9, batch size mínimo de 128, learning rate de 0.1, dividida por 10 em 32k e depois em 48k iterações, e terminando em 64k iterações.
-*  Pesos e um batch normalization são ajustados seguindo referências de outros trabalhos acadêmicos. 
 ## Resultados
 
-* Após executar o treinamento e teste para as redes de 20 e 32 camadas, os resultados obtidos foram os mesmos evidênciados no paper, a Resnet(esquerda) apresentou uma taxa de erro menor durante o processo de treinamento para camadas mais profundas, o que é positivo, permitindo-se utilizar mais layers em uma rede neural para extrair mais features e contornando o problema da degradação do gradiente.
-* É válido ressaltar que o experimento executou o treinamento de todas as redes de uma única vez, mantendo os mesmos valores aleatórios para todas, processo que durou cerca de 6 horas no ambiente do Google Colab.
+* Como é possível evidênciar nos gráficos gerados ao final do experimento, a rede aprendeu os 4 conjuntos de dados com uma precisão acima de 99%.
   
-![image](https://github.com/makucas/Deep-Residual-Learning-for-Image-Recognition/assets/46076494/743a956e-f862-49ac-b35b-50f53a68b403)
+![Plots](https://github.com/makucas/TensorFlow-Playground/assets/46076494/c48e1e42-ebda-4d81-8b25-4595e418fbd3)
 
 ## Referências
-* Artigo utilizado como referência: https://arxiv.org/pdf/1512.03385.pdf
+* https://playground.tensorflow.org
 
 ## Licença
 [MIT](https://choosealicense.com/licenses/mit/)
