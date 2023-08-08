@@ -11,10 +11,13 @@
 
 ## Visão Geral
 
-* O objetivo do projeto era tentar replicar as principais funcionalidades encontradas no TensorFlow playground, mais especificamente os problemas de classificação. 
-* Foram implementadas as principais caracterísitcas para que o experimento atuasse de forma semelhante ao ambiente do TensorFlow, e são elas:
-  * ???
-    - ??
+* Esse projeto tem como objetivo simular o ambiente apresentado em https://playground.tensorflow.org, mais especificamente o problema de Classificação
+* Das principais características implementadas:
+  * 4 Datasets (Circle, Exclusive OR, Gaussian, Spiral)
+  * Split Ratio, Noise e Batch Size
+  * 4 Features (x1, x2, x1², x2²)
+  * Capacidade de adicionar e remover Nuerônios e Camadas
+    
 
 
 ![image](https://github.com/makucas/Deep-Residual-Learning-for-Image-Recognition/assets/46076494/cb81d308-5193-4065-9cd0-ad76d6fc3431)
