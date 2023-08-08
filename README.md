@@ -11,8 +11,8 @@
 
 ## Visão Geral
 
-* Esse projeto tem como objetivo simular o ambiente apresentado em https://playground.tensorflow.org, mais especificamente o problema de Classificação
-* Das principais características implementadas:
+* Esse projeto tem como objetivo simular o ambiente apresentado em https://playground.tensorflow.org, mais especificamente o problema de Classificação.
+* Das principais características do ambiente, foram implementadas:
   * 4 Datasets (Circle, Exclusive OR, Gaussian, Spiral)
   * Split Ratio, Noise e Batch Size
   * 4 Features (x1, x2, x1², x2²)
@@ -26,7 +26,7 @@
 * A implementação foi feita em PyTorch visando atender as principáis características citadas no tópico de visão geral.
 * Cada conjunto de dados é composto por 800 pontos (com exceção do Exclusive Or que possui apenas 400), possuindo suas cordenadas x,y e a respectiva label indicando a coloração daquele ponto. Vale ressaltar que para os resultados obtidos, o dataset foi dividido em 50% para treino e 50% para teste. 
 * O modelo consiste de camadas lineares extraídas da classe nn.Module, e a implementação do mesmo permite adicionar x neurônios e y camadas.
-* A Loss utilizada foi a MeanSquareError, e o batch_size foi 10.
+* A Loss utilizada foi a MeanSquareError, e o batch_size é de 10.
 * Os conjuntos de dados foram treinados com um número de épocas diferente, que variou de 100 até 1000 épocas, dependendo da complexidade do problema.
   
 ## Resultados
