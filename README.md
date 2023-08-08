@@ -1,5 +1,5 @@
 # TensorFlow-Playground
-> Projeto desenvolvido durante a disciplina de Inteligência Artificial ministrada pelo professor Lucas Araújo Pereira na Universidade Federal de Goiás. Implementação em Python utilizando Pytorch.
+> Projeto desenvolvido durante a disciplina de Inteligência Artificial ministrada pelo professor Lucas Araújo Pereira na Universidade Federal de Goiás. Implementação em Python utilizando Pytorch. teste
 
 ## Índice
 
